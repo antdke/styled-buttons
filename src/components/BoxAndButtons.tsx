@@ -26,6 +26,9 @@ const BoxAndButtons = () => {
         <button style={buttonStyles} onClick={() => setColor("blue")}>
           Blue
         </button>
+        <button style={buttonStyles} onClick={() => setColor("red")}>
+          Red
+        </button>
       </section>
     </div>
   );
