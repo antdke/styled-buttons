@@ -1,10 +1,7 @@
 import React from "react";
-import Box from "./components/Box";
 import Header from "./components/Header";
-import ButtonRow from "./components/ButtonRow";
-import "./App.css";
-import BlueButton from "./components/BlueButton";
 import BoxAndButtons from "./components/BoxAndButtons";
+import "./App.css";
 
 document.body.style.backgroundColor = "#e4dfee";
 
