@@ -8,6 +8,14 @@ const gridStyles = {
   width: "300px"
 };
 
+const buttonStyles = {
+  width: "125px",
+  height: "35px",
+  borderRadius: "6px",
+  outline: "none",
+  fontSize: "16px"
+};
+
 const BoxAndButtons = () => {
   const [color, setColor] = useState("grey");
 
@@ -15,7 +23,9 @@ const BoxAndButtons = () => {
     <div>
       <Box color={color} />
       <section style={gridStyles}>
-        <button onClick={() => setColor("blue")}>Blue</button>
+        <button style={buttonStyles} onClick={() => setColor("blue")}>
+          Blue
+        </button>
       </section>
     </div>
   );
