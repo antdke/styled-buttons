@@ -1,12 +1,27 @@
 import React, { useState } from "react";
 
-const [color, changeColor] = useState("grey");
-
 type BoxProps = {
   // start with a prop for the color
   color: string;
 };
 
-const Box: React.FC<BoxProps> = ({ color }) => {
-  return <section />;
+const boxStyle = {
+  display: "flex",
+  width: "100px",
+  margin: "0 auto",
+  justifyContent: "center" as "center",
+  backgroundColor: "blue",
+  padding: "50px"
 };
+
+const Box: React.FC<BoxProps> = ({ color }) => {
+  //const [boxColor, changeColor] = useState("grey");
+
+  return (
+    <section style={boxStyle}>
+      <h3>This is a box</h3>
+    </section>
+  );
+};
+
+export default Box;

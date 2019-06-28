@@ -1,9 +1,13 @@
 import React from "react";
-import logo from "./logo.svg";
+import Box from "./components/Box";
 import "./App.css";
 
 const App: React.FC = () => {
-  return <div className="App" />;
+  return (
+    <div className="App">
+      <Box color={"blue"} />
+    </div>
+  );
 };
 
 export default App;
