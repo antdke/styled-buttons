@@ -8,8 +8,7 @@ type BoxProps = {
 const boxStyle = {
   display: "flex",
   width: "100px",
-  margin: "0 auto",
-  justifyContent: "center" as "center",
+  margin: "90px auto",
   backgroundColor: "blue",
   padding: "50px"
 };
