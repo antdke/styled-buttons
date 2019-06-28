@@ -5,19 +5,19 @@ type BoxProps = {
   color: string;
 };
 
-const boxStyle = {
-  display: "flex",
-  width: "100px",
-  margin: "90px auto",
-  backgroundColor: "blue",
-  padding: "50px"
-};
-
 const Box: React.FC<BoxProps> = ({ color }) => {
   //const [boxColor, changeColor] = useState("grey");
 
   return (
-    <section style={boxStyle}>
+    <section
+      style={{
+        display: "flex",
+        width: "100px",
+        margin: "90px auto",
+        backgroundColor: color,
+        padding: "50px"
+      }}
+    >
       <h3>This is a box</h3>
     </section>
   );
