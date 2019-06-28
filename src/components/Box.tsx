@@ -6,14 +6,12 @@ type BoxProps = {
 };
 
 const Box: React.FC<BoxProps> = ({ color }) => {
-  //const [boxColor, changeColor] = useState("grey");
-
   return (
     <section
       style={{
         display: "flex",
         width: "100px",
-        margin: "90px auto",
+        margin: "50px auto",
         backgroundColor: color,
         padding: "50px"
       }}
