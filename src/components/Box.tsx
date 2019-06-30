@@ -3,9 +3,10 @@ import React, { useState } from "react";
 type BoxProps = {
   // start with a prop for the color
   color: string;
+  curves: string;
 };
 
-const Box: React.FC<BoxProps> = ({ color }) => {
+const Box: React.FC<BoxProps> = ({ color, curves }) => {
   return (
     <section
       style={{
@@ -14,7 +15,7 @@ const Box: React.FC<BoxProps> = ({ color }) => {
         margin: "50px auto",
         backgroundColor: color,
         padding: "50px",
-        borderRadius: "50%"
+        borderRadius: curves
       }}
     >
       <h3>This is a box</h3>
