@@ -13,7 +13,8 @@ const Box: React.FC<BoxProps> = ({ color }) => {
         width: "100px",
         margin: "50px auto",
         backgroundColor: color,
-        padding: "50px"
+        padding: "50px",
+        borderRadius: "50%"
       }}
     >
       <h3>This is a box</h3>
