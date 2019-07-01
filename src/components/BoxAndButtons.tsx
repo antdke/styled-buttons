@@ -23,6 +23,7 @@ const BoxAndButtons = () => {
   return (
     <div>
       <Box color={color} curves={curves} />
+      {/* Colors */}
       <section style={gridStyles}>
         <button style={buttonStyles} onClick={() => setColor("blue")}>
           Blue
@@ -31,9 +32,13 @@ const BoxAndButtons = () => {
           Red
         </button>
       </section>
+      {/* Shapes */}
       <section style={gridStyles}>
         <button style={buttonStyles} onClick={() => setCurves("50%")}>
           Circle
+        </button>
+        <button style={buttonStyles} onClick={() => setCurves("0%")}>
+          Square
         </button>
       </section>
     </div>
